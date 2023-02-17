@@ -4,15 +4,18 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
-    colors: {
-      'blue': '#99ddff'
-    },
-    fontFamily: {
-      sans: ['Abel','Roboto Condensed',...defaultTheme.fontFamily.sans],
-      mono: ['Inconsolata', 'Roboto Mono',...defaultTheme.fontFamily.mono],
-      monospace: ['Cutive Moneo',...defaultTheme.fontFamily.monospace],
-      cursive: ['Tourney',...defaultTheme.fontFamily.cursive],
+    extend: {
+        colors: {
+        'lightBlue': '#99ddff'
+        },
+        fontFamily: {
+          abel: ['Abel', 'sans-serif'],
+          cutive: ['Cutive Mono', 'monospace'],
+          inco: ['Inconsolata', 'monospace'],
+          robo: ['Roboto Condensed', 'sans-serif'],
+          robo_mono: ['Roboto Mono', 'monospace'],
+          cursive: ['Tourney', 'cursive'],
+        },
     },
   },
   plugins: [],
